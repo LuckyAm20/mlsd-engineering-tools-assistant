@@ -3,16 +3,14 @@ repos:
     hooks:
       - id: ruff
         name: Ruff lint
-        entry: uv run --locked ruff check .
+        entry: uv run --locked ruff check
         language: system
-        pass_filenames: false
-        always_run: true
+        types: [python]
       - id: ruff-format
         name: Ruff format
-        entry: uv run --locked ruff format --check .
+        entry: uv run --locked ruff format --check
         language: system
-        pass_filenames: false
-        always_run: true
+        types: [python]
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
