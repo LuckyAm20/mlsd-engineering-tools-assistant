@@ -1,0 +1,25 @@
+# uv and local environments
+.venv/
+.uv_cache/
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# Local configuration/secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+
+# Патчи из загрузок не входят в сдачу
+*.patch

@@ -1,0 +1,33 @@
+[project]
+name = "mlsd-engineering-tools-assistant"
+version = "0.1.0"
+description = "MLSD учебный проект: поиск и рекомендации инженерных инструментов"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "poethepoet>=0.35,<1.0",
+    "pre-commit>=4.0,<5.0",
+    "ruff>=0.12,<1.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.poe.tasks]
+lint = "ruff check ."
+lint-fix = "ruff check --fix ."
+format = "ruff format ."
+format-check = "ruff format --check ."
+hooks-install = "pre-commit install"
+hooks = "pre-commit run --all-files"
+check = { sequence = ["lint", "format-check", "hooks"] }
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B", "UP"]
