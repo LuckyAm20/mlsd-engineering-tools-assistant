@@ -1,0 +1,52 @@
+query_id,family_id,category,split,query_text,origin
+q001,storage_iops,storage,train,Как измерить IOPS SSD случайными чтениями?,author_scenario
+q002,storage_iops,storage,train,Хочу сравнить задержку операций записи на диске под нагрузкой,author_scenario
+q003,storage_iops,storage,train,Нужен генератор разных профилей дискового IO для бенчмарка,author_scenario
+q004,storage_health,storage,test,Какая утилита покажет SMART ошибки и здоровье диска?,author_scenario
+q005,storage_health,storage,test,Надо проверить износ и температуру накопителя,author_scenario
+q006,storage_health,storage,test,Как узнать о деградации SSD по его диагностическим атрибутам,author_scenario
+q007,storage_nvme,storage,validation,Как получить NVMe identify controller и список namespaces?,author_scenario
+q008,storage_nvme,storage,validation,Нужно прочитать журнал здоровья NVMe устройства,author_scenario
+q009,storage_nvme,storage,validation,Хочу посмотреть служебные данные и состояние контроллера нового SSD,author_scenario
+q010,network_bandwidth,network,test,Как измерить TCP throughput между двумя машинами?,author_scenario
+q011,network_bandwidth,network,test,Нужно проверить скорость сети и UDP потери,author_scenario
+q012,network_bandwidth,network,test,Чем прогнать сетевой тест пропускной способности клиент-сервер,author_scenario
+q013,network_packets,network,train,Чем захватить пакеты на интерфейсе с фильтром?,author_scenario
+q014,network_packets,network,train,Нужно увидеть содержимое сетевого трафика при проблемах TCP,author_scenario
+q015,network_packets,network,train,Как сохранить дамп пакетов для последующего разбора протокола,author_scenario
+q016,network_nic,network,train,Как посмотреть статистику ошибок сетевой карты Linux?,author_scenario
+q017,network_nic,network,train,Нужно проверить скорость и duplex Ethernet интерфейса,author_scenario
+q018,network_nic,network,train,Сетевой линк нестабилен хочу проверить драйвер и счётчики NIC,author_scenario
+q019,debug_syscalls,debugging,train,Как посмотреть системные вызовы процесса?,author_scenario
+q020,debug_syscalls,debugging,train,Нужно понять почему программа не может открыть файл,author_scenario
+q021,debug_syscalls,debugging,train,Хочу увидеть обращения к сокетам и файлам во время запуска,author_scenario
+q022,debug_kernel,debugging,train,Чем отследить kernel tracepoints и задержки вызовов через eBPF?,author_scenario
+q023,debug_kernel,debugging,train,Нужна динамическая трассировка событий ядра,author_scenario
+q024,debug_kernel,debugging,train,Хочу быстро посчитать вызовы функции ядра без пересборки программы,author_scenario
+q025,debug_cpu,debugging,validation,Как найти горячие функции и CPU bottleneck Linux процесса?,author_scenario
+q026,debug_cpu,debugging,validation,Программа тормозит хочу построить профиль вызовов CPU,author_scenario
+q027,debug_cpu,debugging,validation,Нужно понять какая часть кода больше всего нагружает процессор,author_scenario
+q028,perf_stress,performance,train,Как создать высокую нагрузку на CPU и RAM для стресс теста?,author_scenario
+q029,perf_stress,performance,train,Нужно проверить стабильность сервера под интенсивной нагрузкой,author_scenario
+q030,perf_stress,performance,train,Хочу воспроизвести ресурсное давление на систему,author_scenario
+q031,perf_command,performance,train,Как сравнить скорость выполнения двух shell команд статистически?,author_scenario
+q032,perf_command,performance,train,Хочу измерить время команды с прогревом и повторениями,author_scenario
+q033,perf_command,performance,train,Нужно найти более быстрый вариант скрипта через серию замеров,author_scenario
+q034,mon_host,monitoring,train,Чем экспортировать метрики CPU памяти и диска для Prometheus?,author_scenario
+q035,mon_host,monitoring,train,Надо получать показатели Linux хоста в формате metrics,author_scenario
+q036,mon_host,monitoring,train,Ищу агент который отдаёт показатели ОС в систему мониторинга,author_scenario
+q037,mon_alert,monitoring,train,Как настроить сбор временных рядов и оповещения по метрикам?,author_scenario
+q038,mon_alert,monitoring,train,Нужно обнаруживать превышение порога ошибок на сервисе,author_scenario
+q039,mon_alert,monitoring,train,Хочу хранить метрики и запускать правила alerting,author_scenario
+q040,mon_dashboard,monitoring,validation,В чём строить дашборды по метрикам Prometheus?,author_scenario
+q041,mon_dashboard,monitoring,validation,Нужны графики для обзора состояния приложений,author_scenario
+q042,mon_dashboard,monitoring,validation,Ищу интерфейс с панелями мониторинга и визуализацией,author_scenario
+q043,http_debug,http,train,Как отправить GET запрос и посмотреть HTTP заголовки?,author_scenario
+q044,http_debug,http,train,Нужно проверить ответ API и TLS соединение вручную,author_scenario
+q045,http_debug,http,train,Хочу воспроизвести запрос к веб сервису из терминала,author_scenario
+q046,http_load,http,train,Чем нагрузить HTTP сервер множеством параллельных запросов?,author_scenario
+q047,http_load,http,train,Хочу замерить RPS и задержку API при большой конкуренции,author_scenario
+q048,http_load,http,train,Нужен нагрузочный тест веб сервиса с заданным числом соединений,author_scenario
+q049,out_of_scope,other,test,Чем редактировать PDF документ?,author_scenario
+q050,out_of_scope,other,test,Нужно изменить текст внутри PDF без конвертации,author_scenario
+q051,out_of_scope,other,test,Нужна программа для исправления страниц в PDF файле,author_scenario
