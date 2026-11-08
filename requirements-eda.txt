@@ -1,0 +1,4 @@
+# Only for notebook/figures; existing uv.lock and HW1 checks stay unchanged.
+matplotlib==3.10.8
+pandas==2.2.3
+ipykernel==6.29.5
